@@ -1,6 +1,66 @@
 html, body {
-    font-family: Arial, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+}
+
+.navbar {
+    width: 25%;
+    height: 100vh;
+    background-color: rgb(34, 41, 53);
+}
+
+.container_avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_avatar p {
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 0;
+}
+
+.avatar {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    padding: 10%;
+}
+
+.navbar_elements li {
+    color: rgb(102, 112, 129);
+    display: flex;
+}
+
+.navbar_elements li i {
+    padding: 10px;
+    display: inline-block; /* Превращаем элемент в блочный, чтобы можно было задать ширину и высоту */
+    width: 30px; /* Пример: фиксированная ширина элемента */
+    height: 30px; /* Пример: фиксированная высота элемента */
+    line-height: 30px; /* Выравниваем содержимое по вертикали */
+    text-align: center; /* Выравниваем содержимое по горизонтали */
+}
+
+.main_page__chapter {
+    padding: 35px;
+    padding-bottom: 0;
+}
+
+.main_page__header {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(38, 193, 126);
 }
