@@ -64,3 +64,38 @@ ul {
     text-transform: uppercase;
     color: rgb(38, 193, 126);
 }
+
+.main_page__contacts {
+    padding-left: 0;
+}
+
+.main_page__contacts li {
+    display: flex;
+}
+
+.main_page__contacts li i {
+    padding: 10px 0 10px 0;
+    display: inline-block; /* Превращаем элемент в блочный, чтобы можно было задать ширину и высоту */
+    width: 30px; /* Пример: фиксированная ширина элемента */
+    height: 30px; /* Пример: фиксированная высота элемента */
+    line-height: 30px; /* Выравниваем содержимое по вертикали */
+    text-align: left; /* Выравниваем содержимое по горизонтали */
+    color: rgb(38, 193, 126);
+}
+
+.main_page__contacts li p {
+    font-weight: bold;
+}
+
+.main_page__experience {
+    padding-left: 0;
+}
+
+.main_page__experience li {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+.main_page__experience__year_period {
+    color: rgb(102, 112, 129);
+}
