@@ -99,3 +99,62 @@ ul {
 .main_page__experience__year_period {
     color: rgb(102, 112, 129);
 }
+
+.main_page__skills {
+    padding-left: 0;
+}
+
+.main_page__skills li {
+    background-color: rgb(38, 193, 126);
+    color: white;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+}
+
+.main_page__skills__levels {
+    display: flex;
+}
+
+.main_page__skills__levels__beginner::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.main_page__skills__levels__beginner {
+    width: 30%;
+}
+
+.main_page__skills__levels__proficient::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.main_page__skills__levels__proficient {
+    width: 30%;
+}
+
+.main_page__skills__levels__expert::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.main_page__skills__levels__expert {
+    width: 30%;
+}
+
+.main_page__skills__levels__master::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.main_page__skills__levels__master {
+    width: 30%;
+}
