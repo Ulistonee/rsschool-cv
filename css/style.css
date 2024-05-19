@@ -119,42 +119,40 @@ ul {
     content: "";
     display: inline-block;
     border: 1px solid rgba(0, 0, 0, 0.5);
+    border-top-color: white;
+    height: 10px;
     width: 100%;
 }
 
 .main_page__skills__levels__beginner {
-    width: 30%;
+    width: 33.3%;
+    text-align: center;
 }
 
 .main_page__skills__levels__proficient::before {
     content: "";
     display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+    height: 10px;
     width: 100%;
 }
 
 .main_page__skills__levels__proficient {
-    width: 30%;
+    width: 33.3%;
+    text-align: center;
 }
 
 .main_page__skills__levels__expert::before {
     content: "";
     display: inline-block;
     border: 1px solid rgba(0, 0, 0, 0.5);
+    border-top-color: white;
+    height: 10px;
     width: 100%;
 }
 
 .main_page__skills__levels__expert {
-    width: 30%;
-}
-
-.main_page__skills__levels__master::before {
-    content: "";
-    display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    width: 100%;
-}
-
-.main_page__skills__levels__master {
-    width: 30%;
+    width: 33.3%;
+    text-align: center;
 }
