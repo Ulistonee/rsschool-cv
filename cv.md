@@ -31,7 +31,7 @@ Git<br>
 Agile<br>
 ### Projects:
 In 2023 I studied in EPAM Frontend course where I implemented
-a CV project which you can [find here](https://cv-app-jet.vercel.app/cv)
+a CV project which you can find [here](https://cv-app-jet.vercel.app/cv)
     
 Link to GitHub repo<br> 
 https://github.com/Ulistonee/front_cloud_camp_test_task

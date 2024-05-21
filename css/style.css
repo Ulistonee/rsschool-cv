@@ -111,6 +111,38 @@ ul {
     margin: 10px 10px 10px 0;
 }
 
+.main_page__skills__javascript {
+    width: 50%;
+}
+
+.main_page__skills__typescript {
+    width: 30%;
+}
+
+.main_page__skills__html {
+    width: 80%;
+}
+
+.main_page__skills__css {
+    width: 60%;
+}
+
+.main_page__skills__tailwind {
+    width: 50%;
+}
+
+.main_page__skills__react {
+    width: 70%;
+}
+
+.main_page__skills__git {
+    width: 80%;
+}
+
+.main_page__skills__agile {
+    width: 50%;
+}
+
 .main_page__skills__levels {
     display: flex;
 }
@@ -155,4 +187,65 @@ ul {
 .main_page__skills__levels__expert {
     width: 33.3%;
     text-align: center;
+}
+
+.main_page__projects {
+    padding-left: 0;
+    position: relative;
+}
+
+.main_page__projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    height: 100%;
+    width: 5px;
+    background-color: rgb(38, 193, 126);
+    z-index: -1;
+}
+
+.main_page__projects li {
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+    align-items: start;
+    position: relative;
+}
+
+.main_page__projects__period {
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: large;
+    background-color: white;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    width: 2rem;
+}
+
+.main_page__projects__description {
+    background-color: rgb(238 238 238);
+    padding: 20px;
+    width: 80%;
+}
+
+.main_page__projects__box {
+    background-color: rgb(238 238 238);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 1rem;
+    left: 3.7rem;
+    transform: rotate(45deg);
+}
+
+.main_page__projects__name {
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.main_page__projects__description p {
+    margin: 0;
 }
