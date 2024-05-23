@@ -6,12 +6,11 @@ html, body {
 }
 
 a {
-    color: inherit; /* Наследовать цвет текста от родительского элемента */
-    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit;
+    text-decoration: none;
 }
 
 a:link, a:visited, a:hover, a:active {
-    color: inherit;
     text-decoration: none;
 }
 
@@ -28,9 +27,9 @@ ul {
 }
 
 .navbar {
-    width: 25%;
-    height: 100vh;
+    width: 300px;
     background-color: rgb(34, 41, 53);
+    padding: 40px;
 }
 
 .container_avatar {
@@ -53,6 +52,10 @@ ul {
     padding: 10%;
 }
 
+.navbar_elements {
+    padding-left: 0;
+}
+
 .navbar_elements li {
     color: rgb(102, 112, 129);
     display: flex;
@@ -68,8 +71,13 @@ ul {
 }
 
 .main_page__chapter {
-    padding: 35px;
-    padding-bottom: 0;
+    padding: 35px 35px 0;
+}
+
+.main_page__chapter__last_element {
+    padding-left: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .main_page__header {
@@ -264,10 +272,16 @@ ul {
     margin: 0;
 }
 
+.github_repo {
+    color: rgb(38, 193, 126);
+    font-weight: bold;
+}
+
 .footer {
     display: flex;
-    background-color: rgb(34, 41, 53);
-    color: rgb(102, 112, 129);
+    background-color: rgb(38, 193, 126);
+    color: white;
+    font-weight: bold;
     gap: 30px;
     padding: 20px;
     width: 100%;
