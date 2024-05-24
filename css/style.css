@@ -74,6 +74,10 @@ ul {
     text-align: center; /* Выравниваем содержимое по горизонтали */
 }
 
+.navbar_elements li i:hover {
+    color: rgb(38, 193, 126);
+}
+
 .navbar_elements__name {
     width: 65px;
     cursor: pointer;
