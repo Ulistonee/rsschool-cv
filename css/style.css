@@ -65,6 +65,10 @@ ul {
     gap: 10px;
 }
 
+.navbar_elements li:hover {
+    color: rgb(38, 193, 126);
+}
+
 .navbar_elements li i {
     padding: 10px;
     display: inline-block; /* Превращаем элемент в блочный, чтобы можно было задать ширину и высоту */
@@ -72,10 +76,6 @@ ul {
     height: 30px; /* Пример: фиксированная высота элемента */
     line-height: 30px; /* Выравниваем содержимое по вертикали */
     text-align: center; /* Выравниваем содержимое по горизонтали */
-}
-
-.navbar_elements li i:hover {
-    color: rgb(38, 193, 126);
 }
 
 .navbar_elements__name {
