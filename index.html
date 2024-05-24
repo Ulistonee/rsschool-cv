@@ -2,6 +2,7 @@
 <html lang="en-GB">
 <link rel="stylesheet" href="css/style.css">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/deb041fddf.js" crossorigin="anonymous"></script>
     <title>CV of Aizhan Bexatova</title>
 </head>
@@ -16,33 +17,33 @@
                 <ul class="navbar_elements">
                     <li>
                         <i class="fa-solid fa-location-arrow"></i>
-                        <p>Contacts</p>
+                        <p class="navbar_elements__name"><a href="#contacts">Contacts</a></p>
                     </li>
                     <li>
                         <i class="fa-solid fa-info"></i>
-                        <p>Short information</p>
+                        <p class="navbar_elements__name"><a href="#short_information">Short information</a></p>
                     </li>
                     <li>
                         <i class="fa-solid fa-briefcase"></i>
-                        <p>Work experience</p>
+                        <p class="navbar_elements__name"><a href="#work_experience">Work experience</a></p>
                     </li>
                     <li>
                         <i class="fa-solid fa-wrench"></i>
-                        <p>Skills</p>
+                        <p class="navbar_elements__name"><a href="#skills">Skills</a></p>
                     </li>
                     <li>
                         <i class="fa-solid fa-suitcase"></i>
-                        <p>Projects</p>
+                        <p class="navbar_elements__name"><a href="#projects">Projects</a></p>
                     </li>
                     <li>
                         <i class="fa-solid fa-language"></i>
-                        <p>Languages</p>
+                        <p class="navbar_elements__name"><a href="#languages">Languages</a></p>
                     </li>
                 </ul>
             </nav>
         </div>
         <div>
-            <div class="main_page__chapter">
+            <div id="contacts" class="main_page__chapter">
                 <p class="main_page__header">Contacts</p>
                 <ul class="main_page__contacts">
                     <li>
@@ -63,7 +64,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="main_page__chapter">
+            <div id="short_information" class="main_page__chapter">
                 <p class="main_page__header">Short information</p>
                 <p>Looking for frontend-developer position.
                     I worked as a developer in a technological giant Sber
@@ -72,7 +73,7 @@
                     My strengths - responsibility and perseverance in completing
                     work tasks, quick learner and high motivation.</p>
             </div>
-            <div class="main_page__chapter">
+            <div id="work_experience" class="main_page__chapter">
                 <p class="main_page__header">Work experience</p>
                 <ul class="main_page__experience">
                     <li>
@@ -87,7 +88,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="main_page__chapter">
+            <div id="skills" class="main_page__chapter">
                 <p class="main_page__header">Skills</p>
                 <ul class="main_page__skills">
                     <li class="main_page__skills__javascript">
@@ -127,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main_page__chapter">
+            <div id="projects" class="main_page__chapter">
                 <p class="main_page__header">Projects</p>
                 <ul class="main_page__projects">
                     <li>
@@ -135,7 +136,7 @@
                         <div class="main_page__projects__description">
                             <div class="main_page__projects__box"></div>
                             <p class="main_page__projects__name">EPAM frontend school - CV</p>
-                            <p>I implemented a CV project which you can find here https://cv-app-jet.vercel.app/cv</p>
+                            <p>I implemented a CV project which you can find <a href="https://cv-app-jet.vercel.app/cv" class="cvLink">here</a></p>
                             <p>Link to <a href="https://gitlab.com/Ulistonee/cv-app" target="_blank" class="github_repo">GitHub</a></p>
                         </div>
                     </li>
@@ -144,7 +145,7 @@
                         <div class="main_page__projects__description">
                             <div class="main_page__projects__box"></div>
                             <p class="main_page__projects__name">Ecole 42 - IRC messenger</p>
-                            <p>This project is about implementing IRC client and server allowing the exchange of messages on TCP/IP network</p>
+                            <p>This project is about implementing IRC client and server allowing the exchange of messages on TCP/IP network.</p>
                             <p>Link to <a href="https://github.com/dkarthus/ft_irc" target="_blank" class="github_repo">GitHub</a></p>
 
                         </div>
@@ -170,7 +171,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="main_page__chapter__last_element">
+            <div id="languages" class="main_page__chapter__last_element">
                 <p class="main_page__header">Languages</p>
                 <p>
                     English - Upper-Intermediate
