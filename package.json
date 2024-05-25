@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.6",
+    "linthtml-config-htmlacademy": "^1.0.24",
+    "stylelint": "^16.6.0",
+    "stylelint-config-htmlacademy": "^4.2.2"
+  },
+  "scripts": {
+    "lint:html": "linthtml /*.html --config .linthtmlrc"
+  }
+}
