@@ -1,0 +1,402 @@
+html,
+body {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+}
+
+.navbar {
+  width: 150px;
+  height: 100vh;
+  background-color: rgb(34, 41, 53);
+  padding: 40px;
+  position: fixed;
+  overflow: hidden;
+  z-index: 1000;
+  top: 0;
+}
+
+.container_avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_avatar p {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  padding-top: 0;
+}
+
+.avatar {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  padding: 10%;
+}
+
+.avatar_name {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.navbar_elements {
+  padding-left: 0;
+}
+
+.navbar_elements li {
+  color: rgb(102, 112, 129);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.navbar_elements li:hover {
+  color: rgb(38, 193, 126);
+}
+
+.navbar_elements li i {
+  padding: 10px;
+  display: inline-block; /* Превращаем элемент в блочный, чтобы можно было задать ширину и высоту */
+  width: 20px; /* Пример: фиксированная ширина элемента */
+  height: 30px; /* Пример: фиксированная высота элемента */
+  line-height: 30px; /* Выравниваем содержимое по вертикали */
+  text-align: center; /* Выравниваем содержимое по горизонтали */
+}
+
+.navbar_elements__name {
+  width: 65px;
+  cursor: pointer;
+}
+
+.navbar_elements__name:hover {
+  color: rgb(38, 193, 126);
+}
+
+.main_page {
+  margin-left: 230px;
+}
+
+.main_page__chapter {
+  padding: 35px 35px 0;
+}
+
+.main_page__chapter__last_element {
+  padding-left: 35px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.main_page__header {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(38, 193, 126);
+}
+
+.main_page__contacts {
+  padding-left: 0;
+}
+
+.main_page__contacts li {
+  display: flex;
+  align-items: center;
+}
+
+.main_page__contacts li i {
+  padding: 10px 0;
+  display: inline-block; /* Превращаем элемент в блочный, чтобы можно было задать ширину и высоту */
+  width: 30px; /* Пример: фиксированная ширина элемента */
+  height: 30px; /* Пример: фиксированная высота элемента */
+  line-height: 30px; /* Выравниваем содержимое по вертикали */
+  text-align: left; /* Выравниваем содержимое по горизонтали */
+  color: rgb(38, 193, 126);
+}
+
+.main_page__contacts li p {
+  font-weight: 700;
+}
+
+.main_page__experience {
+  padding-left: 0;
+}
+
+.main_page__experience li {
+  display: grid;
+  grid-template-columns: 100px auto;
+}
+
+.main_page__experience__year_period {
+  color: rgb(102, 112, 129);
+}
+
+.main_page__skills {
+  padding-left: 0;
+}
+
+.main_page__skills li {
+  background-color: rgb(38, 193, 126);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 10px 10px 10px 0;
+}
+
+.main_page__skills__javascript {
+  width: 50%;
+}
+
+.main_page__skills__typescript {
+  width: 30%;
+}
+
+.main_page__skills__html {
+  width: 80%;
+}
+
+.main_page__skills__css {
+  width: 60%;
+}
+
+.main_page__skills__tailwind {
+  width: 50%;
+}
+
+.main_page__skills__react {
+  width: 70%;
+}
+
+.main_page__skills__git {
+  width: 80%;
+}
+
+.main_page__skills__agile {
+  width: 50%;
+}
+
+.main_page__skills__levels {
+  display: flex;
+}
+
+.main_page__skills__levels__beginner::before {
+  content: "";
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-top-color: rgb(255, 255, 255);
+  height: 10px;
+  width: 100%;
+}
+
+.main_page__skills__levels__beginner {
+  width: 33.3%;
+  text-align: center;
+}
+
+.main_page__skills__levels__proficient::before {
+  content: "";
+  display: inline-block;
+  border: 1px solid rgb(255, 255, 255);
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+  height: 10px;
+  width: 100%;
+}
+
+.main_page__skills__levels__proficient {
+  width: 33.3%;
+  text-align: center;
+}
+
+.main_page__skills__levels__expert::before {
+  content: "";
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-top-color: rgb(255, 255, 255);
+  height: 10px;
+  width: 100%;
+}
+
+.main_page__skills__levels__expert {
+  width: 33.3%;
+  text-align: center;
+}
+
+.main_page__projects {
+  padding-left: 0;
+  position: relative;
+}
+
+.main_page__projects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 4rem;
+  height: 100%;
+  width: 5px;
+  background-color: rgb(38, 193, 126);
+  z-index: -1;
+}
+
+.main_page__projects li {
+  display: flex;
+  gap: 15px;
+  margin: 20px;
+  align-items: start;
+  position: relative;
+}
+
+.main_page__projects__period {
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: large;
+  background-color: rgb(255, 255, 255);
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  width: 2rem;
+}
+
+.main_page__projects__description {
+  background-color: rgb(238 238 238);
+  padding: 20px;
+  width: 80%;
+}
+
+.main_page__projects__box {
+  background-color: rgb(238 238 238);
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  bottom: 1rem;
+  left: 3.7rem;
+  transform: rotate(45deg);
+}
+
+.main_page__projects__name {
+  font-size: large;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.main_page__projects__description p {
+  margin: 10px;
+}
+
+.github_repo {
+  color: rgb(38, 193, 126);
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  background-color: rgb(38, 193, 126);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.github {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
+
+.cv_link {
+  color: rgb(38, 193, 126);
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .navbar {
+    height: 100%;
+    padding: 15px;
+    width: 100px;
+  }
+
+  .main_page {
+    margin-left: 130px;
+  }
+
+  .avatar {
+    width: 80px;
+  }
+
+  .avatar_name {
+    text-align: center;
+  }
+
+  .navbar_elements li i {
+    padding: 5px;
+    width: 20px; /* Пример: фиксированная ширина элемента */
+    height: 30px; /* Пример: фиксированная высота элемента */
+    line-height: 30px; /* Выравниваем содержимое по вертикали */
+  }
+
+  .navbar_elements__name {
+    width: 40px;
+    cursor: pointer;
+  }
+
+  .navbar_elements__name:hover {
+    color: rgb(38, 193, 126);
+  }
+
+  .main_page__chapter {
+    padding: 10px 10px 0;
+  }
+
+  .main_page__projects__name {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .main_page__projects__box {
+    background-color: rgb(238 238 238);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 1rem;
+    left: 4.3rem;
+    transform: rotate(45deg);
+  }
+
+  .footer {
+    justify-content: center;
+    align-items: center;
+  }
+}
