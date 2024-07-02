@@ -13,34 +13,40 @@
                 <img class="avatar" src="assets/img/avatar.png" alt="avatar">
                 <h1 class="avatar_name">Aizhan Bexatova</h1>
             </div>
+          <header>
             <nav>
-                <ul class="navbar_elements">
-                    <li>
-                        <i class="fa-solid fa-location-arrow"></i>
-                        <p class="navbar_elements__name"><a href="#contacts" aria-label="contacts">Contacts</a></p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-info"></i>
-                        <p class="navbar_elements__name"><a href="#short-information" aria-label="short information">Short information</a></p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-briefcase"></i>
-                        <p class="navbar_elements__name"><a href="#work-experience" aria-label="work experience">Work experience</a></p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-wrench"></i>
-                        <p class="navbar_elements__name"><a href="#skills" aria-label="skills">Skills</a></p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-suitcase"></i>
-                        <p class="navbar_elements__name"><a href="#projects" aria-label="projects">Projects</a></p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-language"></i>
-                        <p class="navbar_elements__name"><a href="#languages" aria-label="languages">Languages</a></p>
-                    </li>
-                </ul>
+              <ul class="navbar_elements">
+                <li>
+                  <i class="fa-solid fa-location-arrow"></i>
+                  <p class="navbar_elements__name"><a href="#contacts" aria-label="contacts">Contacts</a></p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-info"></i>
+                  <p class="navbar_elements__name"><a href="#short-information" aria-label="short information">Short information</a></p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-briefcase"></i>
+                  <p class="navbar_elements__name"><a href="#work-experience" aria-label="work experience">Work experience</a></p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-wrench"></i>
+                  <p class="navbar_elements__name"><a href="#skills" aria-label="skills">Skills</a></p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-suitcase"></i>
+                  <p class="navbar_elements__name"><a href="#projects" aria-label="projects">Projects</a></p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-language"></i>
+                  <p class="navbar_elements__name"><a href="#code_example" aria-label="code_example">Code example</a></p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-code"></i>
+                  <p class="navbar_elements__name"><a href="#education_and_languages" aria-label="education_and_languages">Education and languages</a></p>
+                </li>
+              </ul>
             </nav>
+          </header>
         </div>
         <main class="main_page">
             <div class="main_page__chapter" id="contacts">
@@ -171,8 +177,45 @@
                     </li>
                 </ul>
             </div>
-            <div class="main_page__chapter__last_element" id="languages">
-                <h2 class="main_page__header">Languages</h2>
+            <div class="main_page__chapter" id="code_example">
+              <h2 class="main_page__header">Code example</h2>
+              <pre>
+                <code>
+                    int					main(int argc, char *argv[])
+                    {
+                      t_all			all;
+
+                      all.save_flag = 0;
+                      all.map.map = NULL;
+                      all.sarr = NULL;
+                      if ((argc == 2 && check_extension(argv[1], ".cub"))
+                        || (argc == 3 && (!ft_strncmp("--save", argv[2], 7))))
+                      {
+                        if (argc == 3)
+                          all.save_flag = 1;
+                        parser(&all, argv[1]);
+                        if (!(all.dsp.mlx = mlx_init()))
+                          handle_error("Mlx initialization error\n", &all);
+                        if (all.save_flag != 1)
+                          check_screen_size(&all);
+                        if (!(all.dsp.mlx_win = mlx_new_window(all.dsp.mlx,
+                                  all.data.res1, all.data.res2, "cub3D")))
+                          handle_error("Mlx new window error\n", &all);
+                        init_game(&all);
+                        display(&all);
+                        hooks(&all);
+                      }
+                      else
+                        handle_error("Exit game\n", &all);
+                    }
+                </code>
+              </pre>
+            </div>
+            <div class="main_page__chapter__last_element" id="education_and_languages">
+                <h2 class="main_page__header">Education and languages</h2>
+                <p>
+                  Ecole 42 - Software Engineer
+                </p>
                 <p>
                     English - Upper-Intermediate
                 </p>
