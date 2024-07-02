@@ -1,1 +1,2 @@
-https://ulistonee.github.io/rsschool-cv/index.html
+https://ulistonee.github.io/rsschool-cv/
+https://ulistonee.github.io/rsschool-cv/cv
