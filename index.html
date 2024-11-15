@@ -188,25 +188,25 @@
                       all.save_flag = 0;
                       all.map.map = NULL;
                       all.sarr = NULL;
-                      if ((argc == 2 && check_extension(argv[1], ".cub"))
-                        || (argc == 3 && (!ft_strncmp("--save", argv[2], 7))))
+                      if ((argc == 2))
+                        || (argc == 3))
                       {
                         if (argc == 3)
                           all.save_flag = 1;
-                        parser(&all, argv[1]);
+                        parser(all, argv[1]);
                         if (!(all.dsp.mlx = mlx_init()))
-                          handle_error("Mlx initialization error\n", &all);
+                          handle_error("Mlx initialization error\n", all);
                         if (all.save_flag != 1)
-                          check_screen_size(&all);
+                          check_screen_size(all);
                         if (!(all.dsp.mlx_win = mlx_new_window(all.dsp.mlx,
                                   all.data.res1, all.data.res2, "cub3D")))
-                          handle_error("Mlx new window error\n", &all);
-                        init_game(&all);
-                        display(&all);
-                        hooks(&all);
+                          handle_error("Mlx new window error\n", all);
+                        init_game(all);
+                        display(all);
+                        hooks(all);
                       }
                       else
-                        handle_error("Exit game\n", &all);
+                        handle_error("Exit game\n", all);
                     }
                 </code>
               </pre>
@@ -222,7 +222,7 @@
             </div>
             <footer class="footer">
                 <div>
-                    &copy; 2024 by Aizhan Bexatova
+                    2024 by Aizhan Bexatova
                 </div>
                 <div class="github">
                     <a href="https://github.com/Ulistonee" target="_blank" rel="noreferrer noopener" aria-label="link to github repository">GitHub</a>
